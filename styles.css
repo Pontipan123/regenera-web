@@ -32,7 +32,7 @@
     text-rendering: optimizeLegibility;
     line-height: 1.6;
   }
-  h1, h2, h3 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.02em; }
+  h1, h2, h3 { text-wrap: balance; line-height: 1.08; letter-spacing: -0.035em; }
   img { max-width: 100%; display: block; }
   a { color: inherit; }
   ::selection { background: rgba(0, 176, 88, 0.3); }
@@ -369,7 +369,7 @@
     linear-gradient(180deg, rgba(9, 40, 38, 0.55) 0%, rgba(9, 40, 38, 0) 30%, rgba(9, 40, 38, 0) 65%, rgba(9, 40, 38, 0.9) 100%);
 }
 .hero--full .hero-content { position: relative; z-index: 2; }
-.hero--full h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 15ch; }
+.hero--full h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 15ch; letter-spacing: -0.045em; }
 .hero--full p.sub { max-width: 38rem; font-size: clamp(1.1rem, 1.7vw, 1.3rem); color: rgba(245, 242, 233, 0.88); }
 .hero-caption {
   position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 2;
