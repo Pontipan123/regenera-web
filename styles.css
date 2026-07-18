@@ -151,21 +151,30 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
-  /* Qué — pilares (editorial, sin cards) */
-  .pilares { display: grid; gap: 2.5rem; }
-  @media (min-width: 820px) { .pilares { grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
-  .pilar { border-top: 3px solid; padding-top: 1.6rem; }
-  .pilar:nth-child(1) { border-color: var(--verde); }
-  .pilar:nth-child(2) { border-color: var(--naranja); }
-  .pilar:nth-child(3) { border-color: var(--verde-claro); }
-  .pilar-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 1.1rem; }
+  /* Qué — pilares (bloques de color) */
+  .pilares { display: grid; gap: 1.5rem; }
+  @media (min-width: 820px) { .pilares { grid-template-columns: repeat(3, 1fr); } }
+  .pilar {
+    position: relative; overflow: hidden;
+    border-radius: var(--radius-xl); padding: 2.4rem;
+    display: flex; flex-direction: column; min-height: 21rem;
+    transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-out-expo);
+  }
+  .pilar:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+  .pilar:nth-child(1) { background: var(--noche-verde); color: var(--crema); }
+  .pilar:nth-child(2) { background: var(--naranja); color: #fff; }
+  .pilar:nth-child(3) { background: var(--verde); color: #fff; }
+  .pilar-ilu { height: 5rem; width: auto; align-self: flex-start; margin-bottom: auto; }
   .pilar .num {
     font-family: "DM Mono", monospace; font-size: 0.8rem; letter-spacing: 2px;
-    color: var(--musgo);
+    opacity: 0.7; display: block; margin: 2rem 0 0.5rem;
   }
-  .pilar-ilu { height: 3.6rem; width: auto; }
-  .pilar h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.7rem; }
-  .pilar p { color: var(--musgo); font-size: 0.98rem; }
+  .pilar h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.6rem; color: inherit; }
+  .pilar p { font-size: 0.98rem; opacity: 0.88; }
+  .pilar::after {
+    content: ""; position: absolute; inset: 0; opacity: 0.04; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 
   /* Cómo — tranqueras */
   .tranqueras { display: grid; gap: 1.5rem; }
