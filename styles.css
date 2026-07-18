@@ -25,7 +25,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: "Hanken Grotesk", system-ui, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, "Inter", sans-serif;
     background: var(--noche-verde);
     color: var(--crema);
     -webkit-font-smoothing: antialiased;
@@ -33,12 +33,10 @@
     line-height: 1.6;
   }
   h1, h2, h3, h4 {
-    font-family: "Bricolage Grotesque", system-ui, sans-serif;
-    text-wrap: balance; line-height: 1.08; letter-spacing: -0.02em;
+    font-family: "Helvetica Neue", Helvetica, "Inter", sans-serif;
+    text-wrap: balance; line-height: 1.08; letter-spacing: -0.035em;
   }
   /* El wordmark de marca queda en Helvetica (identidad Regenera) */
-  .nav-brand span, .nav-brand small { font-family: "Helvetica Neue", Helvetica, "Hanken Grotesk", sans-serif; }
-  .footer-inner .marca span { font-family: "Helvetica Neue", Helvetica, "Hanken Grotesk", sans-serif; }
   img { max-width: 100%; display: block; }
   a { color: inherit; }
   ::selection { background: rgba(0, 176, 88, 0.3); }
@@ -114,7 +112,7 @@
     font-weight: 900;
     margin-bottom: 1.5rem;
   }
-  .hero h1 .acento { color: var(--verde-claro); }
+  .hero h1 .acento { color: var(--verde-claro); font-style: italic; }
   .hero p.sub { font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: var(--bruma); max-width: 34rem; margin-bottom: 2.5rem; }
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
   .hero-figure { position: relative; }
@@ -378,7 +376,7 @@
     linear-gradient(180deg, rgba(9, 40, 38, 0.55) 0%, rgba(9, 40, 38, 0) 30%, rgba(9, 40, 38, 0) 65%, rgba(9, 40, 38, 0.9) 100%);
 }
 .hero--full .hero-content { position: relative; z-index: 2; }
-.hero--full h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 15ch; letter-spacing: -0.02em; }
+.hero--full h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 15ch; letter-spacing: -0.045em; }
 .hero--full p.sub { max-width: 38rem; font-size: clamp(1.1rem, 1.7vw, 1.3rem); color: rgba(245, 242, 233, 0.88); }
 .hero-caption {
   position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 2;
