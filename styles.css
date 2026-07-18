@@ -360,7 +360,9 @@
 .tranquera-ilustracion svg { width: 100%; height: auto; display: block; }
 
 /* Hero full-bleed */
-.hero--full { min-height: 100svh; display: flex; align-items: center; padding: 8rem 0 7rem; }
+.hero--full { min-height: 100svh; display: flex; align-items: center; padding: 7rem 0 4.5rem; }
+.hero--full h1 { margin-bottom: 1.2rem; }
+.hero--full p.sub { margin-bottom: 2rem; }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero-overlay {
   position: absolute; inset: 0;
@@ -386,3 +388,10 @@ a.persona:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .persona .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
 .persona .in-badge { position: absolute; top: 1.2rem; right: 1.2rem; color: var(--musgo); opacity: 0.45; transition: opacity 0.3s; }
 a.persona:hover .in-badge { opacity: 1; }
+
+/* Hero: parte de la red */
+.hero-red { margin-top: 2.5rem; }
+.hero-red .label { display: block; margin-bottom: 1.1rem; }
+.hero-red-logos { display: flex; align-items: center; gap: 2.4rem; flex-wrap: wrap; }
+.hero-red-logos img { height: 1.7rem; width: auto; filter: brightness(0) invert(1); opacity: 0.8; }
+.hero-red-logos img.lg { height: 2.2rem; }
