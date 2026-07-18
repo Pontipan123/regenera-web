@@ -268,7 +268,7 @@
   .red-grupo { margin-bottom: 3rem; }
   .red-grupo:last-child { margin-bottom: 0; }
   .red-grupo .label { display: block; margin-bottom: 2rem; }
-  .logos-carousel { position: relative; }
+  .logos-carousel { position: relative; padding: 0 3.6rem; }
   .logos-grid {
     display: flex; flex-wrap: nowrap; align-items: center; gap: 2rem;
     overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
@@ -294,8 +294,8 @@
     cursor: pointer; transition: border-color 0.3s, opacity 0.3s;
   }
   .carousel-btn:hover { border-color: var(--crema); }
-  .carousel-btn.prev { left: -0.8rem; }
-  .carousel-btn.next { right: -0.8rem; }
+  .carousel-btn.prev { left: 0; }
+  .carousel-btn.next { right: 0; }
   .carousel-btn[disabled] { opacity: 0.25; cursor: default; }
   .carousel-btn.is-hidden { display: none; }
   .logos-grid img.lg { height: 2.6rem; }
