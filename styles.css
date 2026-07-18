@@ -33,8 +33,8 @@
     line-height: 1.6;
   }
   h1, h2, h3, h4 {
-    font-family: "Spectral", Georgia, serif;
-    text-wrap: balance; line-height: 1.08; letter-spacing: -0.025em;
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    text-wrap: balance; line-height: 1.08; letter-spacing: -0.02em;
   }
   /* El wordmark de marca queda en Helvetica (identidad Regenera) */
   .nav-brand span, .nav-brand small { font-family: "Helvetica Neue", Helvetica, "Hanken Grotesk", sans-serif; }
@@ -114,7 +114,7 @@
     font-weight: 900;
     margin-bottom: 1.5rem;
   }
-  .hero h1 .acento { color: var(--verde-claro); font-style: italic; }
+  .hero h1 .acento { color: var(--verde-claro); }
   .hero p.sub { font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: var(--bruma); max-width: 34rem; margin-bottom: 2.5rem; }
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
   .hero-figure { position: relative; }
