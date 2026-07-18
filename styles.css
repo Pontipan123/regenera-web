@@ -352,3 +352,7 @@
   transition: color 0.3s, border-color 0.3s;
 }
 .lang-toggle:hover { color: var(--crema); border-color: var(--crema); }
+
+/* Ilustración tranquera: campo | tranquera | sociedad */
+.tranquera-ilustracion { margin-bottom: 2.5rem; }
+.tranquera-ilustracion svg { width: 100%; height: auto; display: block; }
