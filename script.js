@@ -25,3 +25,11 @@ document.querySelectorAll(".logos-grid:not(.logos-grid--eco)").forEach((grid, i)
   if (i % 2 === 1) grid.classList.add("logos-marquee--reverse");
   grid.appendChild(track);
 });
+
+// Menú mobile: cerrar al tocar un link o navegar a una sección.
+const navToggle = document.getElementById("navToggle");
+if (navToggle) {
+  document.querySelectorAll(".nav-links a").forEach((a) => {
+    a.addEventListener("click", () => { navToggle.checked = false; });
+  });
+}
