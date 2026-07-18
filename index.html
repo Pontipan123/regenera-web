@@ -312,19 +312,7 @@
   </div>
 </footer>
 
-<script>
-  document.querySelectorAll(".media[data-video] .play-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const media = btn.closest(".media");
-      const iframe = document.createElement("iframe");
-      iframe.src = "https://www.youtube.com/embed/" + media.dataset.video + "?autoplay=1&rel=0";
-      iframe.allow = "autoplay; encrypted-media; picture-in-picture";
-      iframe.allowFullscreen = true;
-      iframe.title = btn.getAttribute("aria-label");
-      media.appendChild(iframe);
-    });
-  });
-</script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
