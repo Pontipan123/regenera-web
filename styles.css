@@ -158,10 +158,12 @@
   .pilar:nth-child(1) { border-color: var(--verde); }
   .pilar:nth-child(2) { border-color: var(--naranja); }
   .pilar:nth-child(3) { border-color: var(--verde-claro); }
+  .pilar-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 1.1rem; }
   .pilar .num {
     font-family: "DM Mono", monospace; font-size: 0.8rem; letter-spacing: 2px;
-    color: var(--musgo); display: block; margin-bottom: 1rem;
+    color: var(--musgo);
   }
+  .pilar-ilu { height: 3.6rem; width: auto; }
   .pilar h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.7rem; }
   .pilar p { color: var(--musgo); font-size: 0.98rem; }
 
