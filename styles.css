@@ -377,3 +377,12 @@
   background: rgba(9, 40, 38, 0.6); backdrop-filter: blur(6px);
   padding: 0.45rem 0.9rem; border-radius: 999px; color: var(--crema);
 }
+
+/* Equipo: cards linkeadas a LinkedIn con foto */
+a.persona { text-decoration: none; display: block; position: relative; color: inherit; transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-out-expo); }
+a.persona:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.persona .avatar { position: relative; overflow: hidden; }
+.persona .avatar span { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.persona .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.persona .in-badge { position: absolute; top: 1.2rem; right: 1.2rem; color: var(--musgo); opacity: 0.45; transition: opacity 0.3s; }
+a.persona:hover .in-badge { opacity: 1; }
