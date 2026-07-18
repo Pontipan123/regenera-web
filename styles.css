@@ -108,7 +108,7 @@
     font-weight: 900;
     margin-bottom: 1.5rem;
   }
-  .hero h1 .acento { color: var(--verde-claro); }
+  .hero h1 .acento { color: var(--verde-claro); font-style: italic; }
   .hero p.sub { font-size: clamp(1.05rem, 1.6vw, 1.25rem); color: var(--bruma); max-width: 34rem; margin-bottom: 2.5rem; }
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
   .hero-figure { position: relative; }
