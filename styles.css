@@ -358,3 +358,22 @@
 /* Ilustración tranquera: campo | tranquera | sociedad */
 .tranquera-ilustracion { margin-bottom: 2.5rem; }
 .tranquera-ilustracion svg { width: 100%; height: auto; display: block; }
+
+/* Hero full-bleed */
+.hero--full { min-height: 100svh; display: flex; align-items: center; padding: 8rem 0 7rem; }
+.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(78deg, rgba(9, 40, 38, 0.94) 0%, rgba(9, 40, 38, 0.78) 38%, rgba(9, 40, 38, 0.3) 72%, rgba(9, 40, 38, 0.5) 100%),
+    linear-gradient(180deg, rgba(9, 40, 38, 0.55) 0%, rgba(9, 40, 38, 0) 30%, rgba(9, 40, 38, 0) 65%, rgba(9, 40, 38, 0.9) 100%);
+}
+.hero--full .hero-content { position: relative; z-index: 2; }
+.hero--full h1 { font-size: clamp(3rem, 7.5vw, 5.6rem); max-width: 15ch; }
+.hero--full p.sub { max-width: 38rem; font-size: clamp(1.1rem, 1.7vw, 1.3rem); color: rgba(245, 242, 233, 0.88); }
+.hero-caption {
+  position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 2;
+  font-family: "DM Mono", monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  background: rgba(9, 40, 38, 0.6); backdrop-filter: blur(6px);
+  padding: 0.45rem 0.9rem; border-radius: 999px; color: var(--crema);
+}
